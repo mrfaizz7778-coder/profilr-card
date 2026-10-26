@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Faiz</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            color: #222;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: #172554;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            width: 300px;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #0002;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .bio {
+            height: 100px;
+            overflow: auto;
+            margin: 15px 0;
+            padding: 10px;
+            background: #f1f5f9;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .card button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .fixed-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #16a34a;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Student Profile Cards</h1>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <div class="avatar">F</div>
+            <h2>Faiz</h2>
+            <p>B.Tech CSE (AI)</p>
+
+            <div class="bio">
+                I am a student at Invertis University, Bareilly.
+                I am learning HTML, CSS, Java and programming.
+                My goal is to improve my technical skills and
+                build useful projects.
+            </div>
+
+            <button>View Profile</button>
+        </section>
+
+        <section class="card">
+            <div class="avatar">AI</div>
+            <h2>AI Learner</h2>
+            <p>Technology Enthusiast</p>
+
+            <div class="bio">
+                Artificial Intelligence helps computers perform
+                tasks that usually require human intelligence.
+                I want to learn web development and AI step by step.
+            </div>
+
+            <button>View Profile</button>
+        </section>
+    </main>
+
+    <button class="fixed-btn" title="Add">+</button>
+</body>
+</html>
